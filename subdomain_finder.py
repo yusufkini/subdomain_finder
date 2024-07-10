@@ -29,7 +29,9 @@ if controlled_url == ".com":
     except:
         print("Please enter your wordlist correctly! (or with .txt extension)")
 
+    counter = len(subdomain_list)
+    print(f"{counter} subdomains have found!")
     for subdomain in subdomain_list:
-        print(subdomain)
+        print(f"Found subdomain: {subdomain}")
 else:
     print("Please enter your url as .com")
